@@ -1,6 +1,6 @@
 body{
     background-color: hsl(0, 0%, 98%);
-    margin: 3% 7%;
+    margin: 7% 10% 0%;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
 }
@@ -8,19 +8,20 @@ body{
     text-align: center;
     margin: auto;
     width:  45%;
-    min-width: 350px;
-    margin-bottom: 20px;
+    min-width: 300px;
+    margin-bottom: 40px;
     color: hsl(234, 12%, 34%)
 }
 .heading > p{
     margin: 7px auto;
 }
+.h1, .h2{
+    font-size: 2.5rem;
+}
 .h1{
-    font-size: 1.75rem;
     font-weight: 200;
 }
 .h2{
-    font-size: 1.75rem;
     font-weight: 600;
 }
 .heading-description{
@@ -36,14 +37,15 @@ img{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
 }
 .main-container > div{
-    min-width: 275px;
+    /* min-width: 300px; */
+    flex: 1 1 0;
 }
 .card{
     margin: 20px 10px;
-    padding: 10px;
+    padding: 30px 10px;
     max-width: 350px;
     background-color: white;
     border-radius: 7px;
@@ -90,5 +92,11 @@ img{
 @media (max-width: 1024px){
     .main-container{
         flex-direction: column;
+    }
+    .card{
+        margin: 20px 0px;
+    }
+    .h1, .h2{
+        font-size: 1.5rem;
     }
 }
